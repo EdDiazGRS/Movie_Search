@@ -25,7 +25,7 @@ class MovieViewSet(viewsets.ModelViewSet):
         
         # If search is provided and no local results found, try external API
         if search_term and not queryset.exists():
-            api_key = "36ed92c5c093b948ade23525672bd0ee"
+            api_key = "Your Key Here"
             tmdb_url = "https://api.themoviedb.org/3/search/movie"
             
             genre_map = {
